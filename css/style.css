@@ -1,0 +1,425 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+
+ul{
+    color: inherit;
+}
+
+a,
+a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+a{
+    position: relative;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* header styling css */
+
+header{
+    background: #3d0303;
+}
+
+.navbar {
+    padding: 10px 130px;
+}
+
+.navbar-nav a{
+    margin-left: 20px;
+    color:white;
+}
+
+.navbar-nav a:hover{
+    color: #fd0000;
+}
+
+.navbar img{
+    height: 30px;
+    width: auto;
+}
+
+
+/* home saction styling */
+
+.home{
+    background-image: url(../Img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    height: 100vh;
+}
+
+.text-1{
+    font-size: 25px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.text-2{
+    font-size: 75px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+} 
+
+.text-3{
+    font-size: 40px;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.text-3 span{
+    color: red;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* portfolio styling */
+
+.portfolio-title{
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.portfolio-title a{
+    font-size: 20px;
+    color: #3d0303;
+    margin-right: 20px;
+}
+
+.portfolio-title a:hover{
+    color: #fd0000;
+}
+  
+.portfolio-title a:hover::after {
+    content: "";
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    bottom: 0;
+    border: 1px solid rgb(250, 0, 0);
+}
+
+.single-work{
+   margin-bottom: 18px;
+}
+
+.portfolio-wraper{
+    align-items: center;
+}
+
+.single-work:hover{
+    box-shadow: 5px 5px 10px 5px #c2c2c2;
+    transition: .3s;
+}
+
+.single-work img{
+    height: 225px;
+    width: auto;
+}
+
+
+.single-work h4{
+    display: flex;
+    justify-content: center;
+    color: #3d0303;
+    padding-top: 15px;
+}
+
+.single-work span{
+    display: flex;
+    justify-content: center;
+    color: #3b3b3b;
+    padding-bottom: 15px;
+}
+
+.see-more{
+    display: flex;
+    justify-content: center;
+    color: #3d0303;
+}
+
+/* about me styling */
+
+
+.about-me {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+.about-section{
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-img img{
+    height: 500px;
+    width: auto;
+}
+
+.about-details h5{
+    font-size: 50px;
+    color: #3d0303;
+}
+
+.about-details h4{
+    font-size: 100px;
+    color: #afafaf;
+}
+
+.about-details span{
+    font-size: 20px;
+    color: #7c7c7c;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.hire{
+    padding-top: 30px;
+}
+
+.hire-me{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    width: 120px;
+    border-radius: 30px;
+    text-align: center;
+    background: #3d0303;
+}
+
+
+
+.see-my{
+    margin-left: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 50px;
+    width: 220px;
+    color: #444444;
+    border: 2px solid #3d0303;
+    border-radius: 30px;
+    text-align: center;
+}
+
+
+/* feedback styling */
+
+.background{
+    background: #f5f5f5;
+    padding-bottom: 100px;
+}
+
+.main-title h2{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 60px;
+    color: #3d0303;
+    padding-bottom: 30px;
+}
+
+.main-title p{
+    text-align: center;
+    color: #7c7c7c;
+    padding-bottom: 60px;
+}
+
+.testi_item {
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    background: #fff;
+    padding: 40px 40px;
+    margin-right: 10px;
+}
+
+.testi_item h4{
+    color: #222222;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.testi_item a{
+    color: #ffc000;
+}
+
+
+.testi_item p{
+    color: #7c7c7c;
+    font-style: italic;
+}
+
+.testi_slider {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* footer styling */
+
+footer{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex; 
+    background: #200000;
+    color: #fff;
+}
+
+.footer-title{
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.foot-desc{
+    font-size: 14px;
+    line-height: 1.5;
+    color: #a3b1bf;
+    margin-bottom: 27px;
+}
+
+.foot-desc-alt{
+    font-weight: 700;
+    padding-right: 10px;
+}
+
+.footer-intro h5{
+    font-size: 16px;
+}
+
+.footer-intro img{
+    height: 35px;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.foot-search{
+    height: 39px;
+    width: 272px;
+    background: #4e5c6c;
+    padding: 8px 10px 8px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.address {
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #a3b1bf;
+}
+
+
+.Footer-info .col-50{
+    padding: 0 3px;
+}
+
+.foot-search input{
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 150px;
+    color: #ffffff;
+}
+
+.foot-search {
+    height: 39px;
+    width: 272px;
+    background: #490000;
+    padding: 8px 10px 8px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.foot-menu{
+    list-style: none;
+    float: right;
+}
+
+.foot-menu li{
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 25px;
+}
+
+.foot-menu li a{
+    color: #707e8c;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.foot-menu li a:hover{
+    color: #434b53;
+}
+
+.sub-btn {
+    height: 28px;
+    width: 90px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    background: #220000;
+}
+
+
+.base{
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyrights{
+    height: 83px;
+    line-height: 83px;
+    background: #1a0000;
+}
+
+.copyrights p{
+    font-size: 14px;
+    color: #707e8c;
+}
+
+
+/* Top Menu styling */
+
+.to-top{
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    color: #f2f5f7;
+    bottom: 22px;
+    right: 20px;
+    background: #3d0303;
+    line-height: 40px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.to-top a{
+    color: #bed5ec;
+}
+
+
+
+
